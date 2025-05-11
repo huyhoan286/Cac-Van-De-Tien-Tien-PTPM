@@ -1,7 +1,7 @@
 package TaiKhoan;
 
 public class Account {
-    private static double balance;
+    private static double balance;  // Thuộc tính số dư tài khoản
 
     // Constructor để khởi tạo số dư
     public Account(double balance) {
