@@ -1,14 +1,14 @@
 package TaiKhoan;
 
 public class Account {
-    private double balance;  // Thuộc tính số dư tài khoản
+    private static double balance;  // Thuộc tính số dư tài khoản
 
     // Constructor để khởi tạo số dư
     public Account(double balance) {
         if (balance < 0) {
             throw new IllegalArgumentException("Số dư không thể là số âm.");
         }
-        this.balance = balance;
+        Account.balance = balance;
     }
 
     // Phương thức rút tiền, đảm bảo balance không âm
@@ -23,7 +23,7 @@ public class Account {
     }
 
     // Getter để lấy số dư
-    public double getBalance() {
+    public static double getBalance() {
         return balance;
     }
 }
